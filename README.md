@@ -1,5 +1,5 @@
 # 🩺 AI-Powered Healthcare Analysis  
-### Member 1 – Data Scientist: Hafsa Hajir  
+### Member 1   
 
 This project demonstrates how **machine learning using Scikit-learn** can predict diabetes risk based on key patient health indicators.  
 It is part of a larger group assignment under the theme **“Mastering the AI Toolkit”**, focusing on applying different AI tools to solve real-world healthcare problems.
@@ -132,5 +132,5 @@ This task strengthened my understanding of:
 
 It also showed how collaboration between **data preprocessing**, **deep learning**
 e machine learning model using Scikit-learn to predict diabetes — a foundation for further TensorFlow and NLP models developed by other team members.
-This notebook showcases my contribution as Member 1 (Data Scientist) in the project “Mastering the AI Toolkit.”
+This notebook showcases my contribution as Member 1  in the project “Mastering the AI Toolkit.”
 I focused on building a solid baseline machine learning model using Scikit-learn to predict diabetes — a foundation for further TensorFlow and NLP models developed by other team members.
