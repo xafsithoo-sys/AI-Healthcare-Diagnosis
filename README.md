@@ -108,6 +108,7 @@ Accuracy	~82%
 Precision (Diabetic)	0.78
 Recall (Diabetic)	0.80
 
+---
 
 ## 🔍 Key Findings
 
@@ -116,6 +117,8 @@ Glucose and BMI are the most influential features in predicting diabetes.
 Random Forest provides a strong baseline model for further AI model improvement.
 
 Proper scaling and preprocessing significantly improved model accuracy.
+
+---
 
 ## 🧭 Reflection
 
@@ -128,6 +131,8 @@ The use of Scikit-learn for practical machine learning tasks
 How classical ML serves as a foundation for advanced AI models
 
 It also showed how collaboration between data preprocessing, deep learning, and NLP can create a complete AI-driven healthcare solution.
+
+---
 
 ## 🏁 Conclusion
 
