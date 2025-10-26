@@ -101,6 +101,7 @@ importances = model.feature_importances_
 plt.barh(columns[:-1], importances)
 plt.title("Feature Importance in Diabetes Prediction")
 plt.show()
+```
 
 ---
 
