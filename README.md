@@ -10,7 +10,7 @@ This repository showcases the collaborative efforts of four members exploring ho
 | Member | Role | Focus Area | Tools / Frameworks |
 |:--------|:------|:------------|:-------------------|
 | **Member 1 – Hafsa Hajir** | Data Scientist | Predicting diabetes risk using classical ML | Python, Scikit-learn, Pandas, Matplotlib |
-| **Member 2 – TensorFlow Specialist** | Deep Learning Engineer | Building and training deep neural networks for healthcare prediction | Python, TensorFlow, Keras |
+| **Member 2 –brian mwaghogho** | TensorFlow Specialist** | Deep Learning Engineer | Building and training deep neural networks for healthcare prediction | Python, TensorFlow, Keras |
 | **Member 3 – Anyira Rodney** | NLP Specialist | Movie review sentiment analysis | SpaCy, Scikit-learn, Pandas |
 | **Member 4 – Optimization & Ethics Lead** | Responsible AI & Optimization | Model fine-tuning, fairness, and ethical AI considerations | Python, Scikit-learn, Fairlearn |
 
@@ -47,7 +47,7 @@ This segment focuses on predicting **diabetes risk** using **Scikit-learn** with
 
 ---
 
-## 🧬 Member 2 – TensorFlow Specialist (Deep Learning Engineer)
+## 🧬 Member 2 – Brian Mwaghogho-TensorFlow Specialist (Deep Learning Engineer)
 
 Developed a **neural network model** using **TensorFlow and Keras** to enhance predictive accuracy on healthcare data.  
 
@@ -127,7 +127,7 @@ Our team emphasized:
 
 Each member contributed ethically:  
 - Hafsa ensured proper handling and preprocessing of sensitive health data.  
-- The Deep Learning member avoided overfitting that might lead to false predictions.  
+- Brian  The Deep Learning member avoided overfitting that might lead to false predictions.  
 - Rodney anonymized textual data to prevent personal exposure.  
 - The Ethics lead evaluated fairness and guided responsible AI use.  
 
@@ -141,7 +141,7 @@ A huge thank you to all team members who contributed to the success of this proj
 
 - 🧠 **[Hafsa Hajir ](https://github.com/xafsithoo-sys)** – Data Scientist  
 - 💬 **[Anyira Rodney ](https://github.com/AnyiraRodney)** – NLP Specialist  
-- ⚙️ **TensorFlow Specialist** – Deep Learning Engineer  
+-**[Brian Mwaghogho] (https://github.com/brianmwaghogho)**- ⚙️ **TensorFlow Specialist** – Deep Learning Engineer  
 - ⚖️ **Ethics & Optimization Lead** – Responsible AI Engineer  
 
 Special appreciation to our instructor and peers for continuous feedback and support during the *Mastering the AI Toolkit* challenge.
