@@ -1,136 +1,165 @@
-# 🩺 AI-Powered Healthcare Analysis  
-### Member 1   
+# 🧠 Mastering the AI Toolkit – Group Project  
+### *AI Applications in Healthcare and Beyond*  
 
-This project demonstrates how **machine learning using Scikit-learn** can predict diabetes risk based on key patient health indicators.  
-It is part of a larger group assignment under the theme **“Mastering the AI Toolkit”**, focusing on applying different AI tools to solve real-world healthcare problems.
-
----
-
-## 📋 Project Overview  
-
-The objective of this work is to build a **baseline predictive model** that determines the likelihood of diabetes in patients using structured healthcare data.  
-My role focused on the **data science and classical ML** side — preparing data, training a model with Scikit-learn, evaluating performance, and visualizing insights.
-
-**Theme:** *Mastering the AI Toolkit – Healthcare Applications*  
-**Dataset:** *Pima Indians Diabetes Dataset (Kaggle)*  
-**Framework:** *Scikit-learn*
+This repository showcases the collaborative efforts of four members exploring how different **AI tools and frameworks** can be applied to solve real-world problems — from **healthcare prediction** to **sentiment analysis** and **ethical AI design**.  
 
 ---
 
-## 👩🏽‍💻 My Role  
+## 👥 Team Members and Roles  
 
-As the **Data Scientist**, my responsibilities included:  
-- 🧹 Cleaning and preparing the dataset  
-- 📊 Performing exploratory data analysis (EDA)  
-- ⚙️ Building and training a baseline model using `RandomForestClassifier`  
-- 📈 Evaluating model performance  
-- 🔍 Visualizing feature importance and drawing insights  
-
----
-
-## 🧰 Tools and Libraries Used  
-
-- **Python**  
-- **Pandas** – data handling  
-- **NumPy** – numerical operations  
-- **Scikit-learn** – machine learning model building  
-- **Matplotlib / Seaborn** – visualization  
+| Member | Role | Focus Area | Tools / Frameworks |
+|:--------|:------|:------------|:-------------------|
+| **Member 1 – Hafsa Hajir** | Data Scientist | Predicting diabetes risk using classical ML | Python, Scikit-learn, Pandas, Matplotlib |
+| **Member 2 – TensorFlow Specialist** | Deep Learning Engineer | Building and training deep neural networks for healthcare prediction | Python, TensorFlow, Keras |
+| **Member 3 – Anyira Rodney** | NLP Specialist | Movie review sentiment analysis | SpaCy, Scikit-learn, Pandas |
+| **Member 4 – Optimization & Ethics Lead** | Responsible AI & Optimization | Model fine-tuning, fairness, and ethical AI considerations | Python, Scikit-learn, Fairlearn |
 
 ---
 
-## 📊 Dataset Description  
+## 🎯 Project Overview  
 
-**Name:** Pima Indians Diabetes Dataset  
-**Source:** [Kaggle – Diabetes Dataset](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)  
+Under the theme **“Mastering the AI Toolkit”**, this project explores multiple branches of Artificial Intelligence by dividing tasks among team members to demonstrate:  
 
-**Features:**
-- Pregnancies  
-- Glucose  
-- BloodPressure  
-- SkinThickness  
-- Insulin  
-- BMI  
-- DiabetesPedigreeFunction  
-- Age  
-- Outcome *(Target: 1 = Diabetic, 0 = Non-Diabetic)*  
+- Data-driven healthcare analytics  
+- Deep learning applications  
+- NLP-driven sentiment classification  
+- Ethical AI practices  
+
+Each part contributes to building a holistic understanding of how AI can improve **decision-making, automation, and social good**.
 
 ---
 
-## 💻 Model Implementation  
+## 🩺 Member 1 – Hafsa Hajir (Data Scientist)
 
-```python
-# Import libraries
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, classification_report
-import matplotlib.pyplot as plt
+This segment focuses on predicting **diabetes risk** using **Scikit-learn** with structured healthcare data.  
 
-# Load dataset
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
-columns = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 
-           'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome']
-df = pd.read_csv(url, names=columns)
+### Key Steps:
+- Data preprocessing and cleaning  
+- Exploratory Data Analysis (EDA)  
+- Training a baseline `RandomForestClassifier`  
+- Evaluating accuracy, precision, and recall  
+- Visualizing feature importance  
 
-# Split data
-X = df.drop('Outcome', axis=1)
-y = df['Outcome']
-
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
-
-# Scale features
-scaler = StandardScaler()
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
-
-# Build model
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-model.fit(X_train, y_train)
-
-# Evaluate model
-y_pred = model.predict(X_test)
-
-print("Accuracy:", accuracy_score(y_test, y_pred))
-print("\nClassification Report:\n", classification_report(y_test, y_pred))
-
-# Feature Importance
-importances = model.feature_importances_
-plt.barh(columns[:-1], importances)
-plt.title("Feature Importance in Diabetes Prediction")
-plt.show()
-```
+### Insights:
+- Glucose and BMI were most influential in predicting diabetes.  
+- Achieved ~82% accuracy using classical ML.  
+- Established a strong baseline for future deep learning improvements.
 
 ---
 
-## 📈 Results and Insights  
+## 🧬 Member 2 – TensorFlow Specialist (Deep Learning Engineer)
 
-| **Metric** | **Score** |
-|-------------|-----------|
-| Accuracy | ~82% |
-| Precision (Diabetic) | 0.78 |
-| Recall (Diabetic) | 0.80 |
+Developed a **neural network model** using **TensorFlow and Keras** to enhance predictive accuracy on healthcare data.  
 
----
+### Key Steps:
+- Normalized data using feature scaling  
+- Implemented multi-layer perceptron (MLP) architecture  
+- Applied dropout regularization to prevent overfitting  
+- Evaluated model with cross-validation  
 
-### 🔍 Key Findings  
-
-- **Glucose** and **BMI** are the most influential features in predicting diabetes.  
-- **Random Forest** provides a strong baseline model for further AI model improvement.  
-- Proper **scaling and preprocessing** significantly improved model accuracy.  
+### Insights:
+- Achieved improved recall compared to baseline ML.  
+- Demonstrated how deep learning captures nonlinear relationships in medical datasets.
 
 ---
 
-## 🧭 Reflection  
+## 💬 Member 3 – Anyira Rodney (NLP Specialist)
 
-This task strengthened my understanding of:  
-- End-to-end **data science workflows** in healthcare applications  
-- The use of **Scikit-learn** for practical machine learning tasks  
-- How **classical ML** serves as a foundation for advanced AI models  
+Applied **Natural Language Processing (NLP)** to analyze sentiment in movie reviews.  
 
-It also showed how collaboration between **data preprocessing**, **deep learning**
-e machine learning model using Scikit-learn to predict diabetes — a foundation for further TensorFlow and NLP models developed by other team members.
-This notebook showcases my contribution as Member 1  in the project “Mastering the AI Toolkit.”
-I focused on building a solid baseline machine learning model using Scikit-learn to predict diabetes — a foundation for further TensorFlow and NLP models developed by other team members.
+### Tools:
+- SpaCy for tokenization and linguistic processing  
+- Scikit-learn for TF-IDF vectorization and model training  
+- Pandas for data manipulation  
+
+### Key Steps:
+- Cleaned and preprocessed textual data  
+- Converted reviews into numerical features (TF-IDF)  
+- Trained logistic regression and SVM models  
+- Evaluated accuracy and F1-score  
+
+### Insights:
+- Achieved strong sentiment classification accuracy (~85%).  
+- Highlighted NLP’s versatility beyond healthcare applications.
+
+---
+
+## ⚖️ Member 4 – Optimization & Ethics Lead  
+
+Focused on ensuring **fair, transparent, and reliable** AI performance across all models.  
+
+### Key Focus:
+- Identifying potential bias in healthcare and sentiment datasets  
+- Using metrics like fairness, recall, and demographic parity  
+- Optimizing hyperparameters for improved model generalization  
+
+### Ethical Considerations:
+- AI in healthcare must avoid bias in patient data interpretation.  
+- Transparency and explainability are key to responsible AI adoption.  
+
+---
+
+## 🧰 Tools and Technologies  
+
+- **Languages:** Python  
+- **Frameworks:** Scikit-learn, TensorFlow, SpaCy, Pandas  
+- **Visualization:** Matplotlib, Seaborn  
+- **Version Control:** GitHub  
+
+---
+
+## 💡 Key Learnings  
+
+- Collaboration across AI subfields improves understanding and innovation.  
+- Classical ML (Scikit-learn) provides interpretability; Deep Learning (TensorFlow) provides accuracy.  
+- NLP adds text-based intelligence, complementing structured data analysis.  
+- Ethical AI ensures fairness, trust, and social responsibility.
+
+---
+
+## 🧭 Ethical Discussion (Group Reflection)
+
+AI has tremendous potential to transform healthcare and information systems, but it must be used responsibly.  
+Our team emphasized:  
+- Protecting **data privacy and patient confidentiality**  
+- Preventing **algorithmic bias** that could disadvantage specific groups  
+- Maintaining **model transparency** for explainable decision-making  
+
+Each member contributed ethically:  
+- Hafsa ensured proper handling and preprocessing of sensitive health data.  
+- The Deep Learning member avoided overfitting that might lead to false predictions.  
+- Rodney anonymized textual data to prevent personal exposure.  
+- The Ethics lead evaluated fairness and guided responsible AI use.  
+
+Together, this ensures that our AI systems remain **accurate, fair, and human-centered**.  
+
+---
+
+## 🤝 Collaborators  
+
+A huge thank you to all team members who contributed to the success of this project:  
+
+- 🧠 **[Hafsa Hajir ](https://github.com/xafsithoo-sys)** – Data Scientist  
+- 💬 **[Anyira Rodney ](https://github.com/AnyiraRodney)** – NLP Specialist  
+- ⚙️ **TensorFlow Specialist** – Deep Learning Engineer  
+- ⚖️ **Ethics & Optimization Lead** – Responsible AI Engineer  
+
+Special appreciation to our instructor and peers for continuous feedback and support during the *Mastering the AI Toolkit* challenge.
+
+---
+
+## 🚀 How to Run  
+
+```bash
+# Clone the repository
+git clone https://github.com/xafsithoo-sys/Mastering-AI-Toolkit.git
+
+# Navigate into the folder
+cd Mastering-AI-Toolkit
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run notebooks or scripts
+python member1_diabetes_prediction.py
+python member3_sentiment_analysis.py
