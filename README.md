@@ -10,7 +10,7 @@ This repository showcases the collaborative efforts of four members exploring ho
 | Member | Role | Focus Area | Tools / Frameworks |
 |:--------|:------|:------------|:-------------------|
 | **Member 1 – Hafsa Hajir** | Data Scientist | Predicting diabetes risk using classical ML | Python, Scikit-learn, Pandas, Matplotlib |
-| **Member 2 –brian mwaghogho** | TensorFlow Specialist** | Deep Learning Engineer | Building and training deep neural networks for healthcare prediction | Python, TensorFlow, Keras |
+| **Member 2 –brian mwaghogho** | TensorFlow Specialist| Deep Learning Engineer | Building and training deep neural networks for healthcare prediction | Python, TensorFlow, Keras |
 | **Member 3 – Anyira Rodney** | NLP Specialist | Movie review sentiment analysis | SpaCy, Scikit-learn, Pandas |
 | **Member 4 – Optimization & Ethics Lead** | Responsible AI & Optimization | Model fine-tuning, fairness, and ethical AI considerations | Python, Scikit-learn, Fairlearn |
 
