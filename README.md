@@ -163,3 +163,5 @@ pip install -r requirements.txt
 # Run notebooks or scripts
 python member1_diabetes_prediction.py
 python member3_sentiment_analysis.py
+
+[**Click here to view our Final PDF Report**][AI Tools and Applications.pdf](https://github.com/user-attachments/files/23314946/AI.Tools.and.Applications.pdf)
